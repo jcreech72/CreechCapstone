@@ -1,11 +1,11 @@
-Creech Capstone Project
-Analysis of Lives Saved When Wearing a Proper Helmet
+# Creech Capstone Project
+## Analysis of Lives Saved When Wearing a Proper Helmet
 
 Author: Julie L Creech
 
 Date: April 6, 2023
 
-Data Sets
+## Data Sets
 https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/
 
 Using data set Fars2021NationalCSV, Fars2018NationalCSV, Fars2015NationalCSV, Fars2012NationalCSV, Fars2009NationalCSV
@@ -14,10 +14,10 @@ The data is linked together with a field called ST_CASE
 
 
 
-Report
+## Report
 Link to OverLeaf report: https://www.overleaf.com/read/mzdkvqkytrmg
 
-File Descriptions
+## File Descriptions
 
 StatesReqHelmetList.Xlsx: Scraped data from website https://thebradleylawfirm.com/personal-injury-resources/helmet-laws-in-missouri/#Missouri_and_Helmet_Laws/ 
 Formatted the data so that it was columnar data
@@ -80,7 +80,7 @@ Pull data all together into either one Tableau file or into PostgresSQL
 
 
 
-Count of Deaths Based on Helmet Choice in 2020
+## Count of Deaths Based on Helmet Choice in 2020
 Pivot Data provided some initial data points:
 Count of fatalities in the year 2020 was a sampling used; however, the dataset will not be used for the analysis. 
 During the sampling data, found that there was a total of 5,776 deaths across the united states. 
@@ -93,7 +93,7 @@ Motorcycles wearing a DOT approved helmet totaled 1,463 --> 25% of the fatalitie
 3% of the data was unuseful. 
 
 
-Python Notebook
+## Python Notebook
 Review Data & Statistics (loaded cleaned csv file into Python notebook)
 Vizualizations & Finding Outliers
 Remove Outliers & Look at Distributions Without Outliers
