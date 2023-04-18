@@ -38,13 +38,14 @@ Fars2012NationalCSV: Origional Data Set = #records --> After Cleanup = #records
 person2012.csv
 accident2012.csv--Used a vLookup to populate the longitude and latitude data to the person file
 
-Fars2009NationalCSV: Origional Data Set = #records --> After Cleanup = #records
-person2009.csv
-accident2009.csv--Used a vLookup to populate the longitude and latitude data to the person file
+Fars2020NationalCSV: Origional Data Set = #records --> After Cleanup = #records
+person2020.csv
+accident2020.csv--Used a vLookup to populate the longitude and latitude data to the person file
 
 Used Excel to clean the data, but used a Macro so that this would only have to be done manually one time. 
 Removed column that will not be used. Removed rows that were not motorcycle data. Used the VPICBodylassName as the column to filter and identify motorcycles only. 
-Deleted the rest of the data that would never be a resource
+Deleted the rest of the data that would never be a resource.
+Ended up not able to use some of the files because the formatting was different. As it was, column titles were different, and had to do a lot more cleaning than origionally thought. 
 Remaining Fields: 
 From Person.csv
 STATE
