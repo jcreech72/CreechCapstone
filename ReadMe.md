@@ -93,6 +93,10 @@ Motorcycles wearing a DOT approved helmet totaled 1,463 --> 25% of the fatalitie
 25% of the fatalities wore an approved helmet
 3% of the data was unuseful. 
 
+##Cleaning Data
+Pulled all data into one file and removed null values and dropped nulls totally only 22. Cleaning1.png
+Checked the data type and checked for outliers. 
+As expected, noted the SEX to show more males than females, years to be split out between 2015 and 2021, an "Age" range median of 43 with a top range of 96. I was suprised to see the minimum range as 1. Without assuming it was an anomily or outlier due to there being other low-range ages as well. Cleaning2.png
 
 ## Python Notebook
 Review Data & Statistics (loaded cleaned csv file into Python notebook)
