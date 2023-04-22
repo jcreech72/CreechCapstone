@@ -80,6 +80,11 @@ Pull data all together into either one Tableau file or into PostgresSQL
 [file].py will be the python file that I use for statistics and visualizations
 
 
+## Tally data in Excel
+File Tally Data.xlsx provide a tab call fields where the fields were analyzed for each year. The column titles were not all the same, and the data was sometimes not included in every year. By taking the columns and pasting them in the field, was able to clean the column titles, unify the naming convention and understand what data was missing. Had to use the minimum viable product, meaning that the data that was missing would be unused data for all data sets. 
+While doing the exercise of validating the data, provided a tally table that provided some additional stats. From that, created a chart that shows that for years 2015, 2018, 2020, 2021 there is evidence that there are less rider fatalities of DOT helmet users than with riders who wore no helmet or used a non-DOT approved helmet. 
+The data provides that 62% of fatalities involving riders who wore no helmet over riders who did wear a DOT approved helmet.
+![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/AnnualFatalbyHelmet.png)
 
 ## Count of Deaths Based on Helmet Choice in 2020
 Pivot Data provided some initial data points:
