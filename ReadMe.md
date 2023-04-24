@@ -105,7 +105,7 @@ Cleaning data in Jupyter Notebook and can be found in the data_cleaning.ipynb fi
 Data was found in multiple years of CSV files that did not follow a formatting standard. Cleaning specifics are detailed in Latex file https://www.overleaf.com/read/mzdkvqkytrmg
 Pulled all data into one file. Using Python, created a script to clean the file: reference "data_cleaning.ipynb. Next, removed null values and dropped nulls totally only 22. ![image](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning1.png)
 Checked the data type and checked for outliers. 
-As expected, noted the SEX to show more males than females, years to be split out between 2015 and 2021, an "Age" range median of 43 with a top range of 96. I was suprised to see the minimum range as 1. Without assuming it was an anomily or outlier due to there being other low-range ages as well. ![image](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning2.png)
+As expected, noted the SEX to show more males than females, years to be split out between 2015 and 2021, an "Age" range median of 43 with a top range of 96. I was suprised to see the minimum range as 1. Without assuming it was an anomily or outlier due to there being other low-range ages as well. ![image](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning2.png)Chi-Sq2.png
 
 Data_Manipulation.ipynb Notbook provides the Linear Regression and Chi Square Test. ![image]("https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq1.png") and ![image]("https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq2.png")
 
