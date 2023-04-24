@@ -22,7 +22,7 @@ Link to OverLeaf report: https://www.overleaf.com/read/mzdkvqkytrmg
 StatesReqHelmetList.Xlsx: Scraped data from website https://thebradleylawfirm.com/personal-injury-resources/helmet-laws-in-missouri/#Missouri_and_Helmet_Laws/ 
 Formatted the data so that it was columnar data
 
-FinalData.csv contains all the data in one data set. Provided an "Archive for Git" folder that has each year's final data as referenced below. Combining the Person and Accident file is referenced below: 
+FinalData.csv ![image text](https://github.com/jcreech72/CreechCapstone/blob/main/FinalData.csv) contains all the data in one data set. Provided an "Archive for Git" folder that has each year's final data as referenced below. Combining the Person and Accident file is referenced below: 
 Fars2021NationalCSV: Origional Data Set = #records --> After Cleanup = #records
 person2021.csv 
 accident2021.csv --Used a vLookup to populate the longitude and latitude data to the person file
@@ -72,20 +72,23 @@ From Accident.csv
 Longitude
 Latitude
 
-![image](https://user-images.githubusercontent.com/89232631/230538411-ff73f101-2d70-4593-a2fd-e1fadbc481b9.png)
+![alt text](https://user-images.githubusercontent.com/89232631/230538411-ff73f101-2d70-4593-a2fd-e1fadbc481b9.png)
 
 Used Excel to do a vLookup function to pull in longitude and latitude data into one table. 
 Move the cleaned data to one file within each folder named FARS[year]National.csv
 Pull data all together into either one Tableau file or into PostgresSQL
 
-[file].py will be the python file that I use for statistics and visualizations
+Files used for cleaning and manipulations in Jupyter Notebooks: 
+https://github.com/jcreech72/CreechCapstone/blob/main/data_manipulation.py
+https://github.com/jcreech72/CreechCapstone/blob/main/data_cleaning.ipynb
+https://github.com/jcreech72/CreechCapstone/blob/main/Data_Manipulation.ipynb
 
 
 ## Tally data in Excel
 File Tally Data.xlsx provide a tab call fields where the fields were analyzed for each year. The column titles were not all the same, and the data was sometimes not included in every year. By taking the columns and pasting them in the field, was able to clean the column titles, unify the naming convention and understand what data was missing. Had to use the minimum viable product, meaning that the data that was missing would be unused data for all data sets. 
 While doing the exercise of validating the data, provided a tally table that provided some additional stats. From that, created a chart that shows that for years 2015, 2018, 2020, 2021 there is evidence that there are less rider fatalities of DOT helmet users than with riders who wore no helmet or used a non-DOT approved helmet. 
 The data provides that 62% of fatalities involving riders who wore no helmet over riders who did wear a DOT approved helmet.
-![image](https://github.com/jcreech72/CreechCapstone/blob/main/AnnualFatalbyHelmet.png)
+![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/AnnualFatalbyHelmet.png)
 
 ## Count of Deaths Based on Helmet Choice in 2020
 Pivot Data provided some initial data points:
@@ -103,11 +106,13 @@ Motorcycles wearing a DOT approved helmet totaled 1,463 --> 25% of the fatalitie
 ##  Cleaning Data
 Cleaning data in Jupyter Notebook and can be found in the data_cleaning.ipynb file.
 Data was found in multiple years of CSV files that did not follow a formatting standard. Cleaning specifics are detailed in Latex file https://www.overleaf.com/read/mzdkvqkytrmg
-Pulled all data into one file. Using Python, created a script to clean the file: reference "data_cleaning.ipynb. Next, removed null values and dropped nulls totally only 22. ![image](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning1.png)
+Pulled all data into one file. Using Python, created a script to clean the file: reference "data_cleaning.ipynb. Next, removed null values and dropped nulls totally only 22. ![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning1.png)
 Checked the data type and checked for outliers. 
-As expected, noted the SEX to show more males than females, years to be split out between 2015 and 2021, an "Age" range median of 43 with a top range of 96. I was suprised to see the minimum range as 1. Without assuming it was an anomily or outlier due to there being other low-range ages as well. ![image](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning2.png)Chi-Sq2.png
+As expected, noted the SEX to show more males than females, years to be split out between 2015 and 2021, an "Age" range median of 43 with a top range of 96. I was suprised to see the minimum range as 1. Without assuming it was an anomily or outlier due to there being other low-range ages as well. 
+![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning2.png)
 
-Data_Manipulation.ipynb Notbook provides the Linear Regression and Chi Square Test. ![image]("https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq1.png") and ![image]("https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq2.png")
+Data_Manipulation.ipynb Notbook provides the Linear Regression and Chi Square Test. ![image](https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq1.png) and 
+![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq2.png)
 
 
 ## Python Notebook
@@ -115,4 +120,4 @@ Review Data & Statistics (loaded cleaned csv file into Python notebook)
 Vizualizations & Finding Outliers
 Remove Outliers & Look at Distributions Without Outliers
 Visualizations & Correlations
-![image]("https://github.com/jcreech72/CreechCapstone/blob/main/PythonLR1.png")
+![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/PythonLR1.png)
