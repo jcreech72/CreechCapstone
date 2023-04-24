@@ -22,6 +22,7 @@ Link to OverLeaf report: https://www.overleaf.com/read/mzdkvqkytrmg
 StatesReqHelmetList.Xlsx: Scraped data from website https://thebradleylawfirm.com/personal-injury-resources/helmet-laws-in-missouri/#Missouri_and_Helmet_Laws/ 
 Formatted the data so that it was columnar data
 
+FinalData.csv contains all the data in one data set. Provided an "Archive for Git" folder that has each year's final data as referenced below. Combining the Person and Accident file is referenced below: 
 Fars2021NationalCSV: Origional Data Set = #records --> After Cleanup = #records
 person2021.csv 
 accident2021.csv --Used a vLookup to populate the longitude and latitude data to the person file
@@ -88,6 +89,7 @@ The data provides that 62% of fatalities involving riders who wore no helmet ove
 
 ## Count of Deaths Based on Helmet Choice in 2020
 Pivot Data provided some initial data points:
+FinalDataMapping.XLSX file shows how data was pivoted to provide an Annual YoY view of helmet choice and fatalities results.
 Count of fatalities in the year 2020 was a sampling used; however, the dataset will not be used for the analysis. 
 During the sampling data, found that there was a total of 5,776 deaths across the united states. 
 Removing data that does not pertain to the data because it is uncertain data, totals 202
@@ -99,13 +101,18 @@ Motorcycles wearing a DOT approved helmet totaled 1,463 --> 25% of the fatalitie
 3% of the data was unuseful. 
 
 ##  Cleaning Data
+Cleaning data in Jupyter Notebook and can be found in the data_cleaning.ipynb file.
 Data was found in multiple years of CSV files that did not follow a formatting standard. Cleaning specifics are detailed in Latex file https://www.overleaf.com/read/mzdkvqkytrmg
 Pulled all data into one file. Using Python, created a script to clean the file: reference "data_cleaning.ipynb. Next, removed null values and dropped nulls totally only 22. ![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning1.png)
 Checked the data type and checked for outliers. 
 As expected, noted the SEX to show more males than females, years to be split out between 2015 and 2021, an "Age" range median of 43 with a top range of 96. I was suprised to see the minimum range as 1. Without assuming it was an anomily or outlier due to there being other low-range ages as well. ![alt text](https://github.com/jcreech72/CreechCapstone/blob/main/Cleaning2.png)
+
+Data_Manipulation.ipynb Notbook provides the Linear Regression and Chi Square Test. ![alt text]("https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq1.png") and ![alt text]("https://github.com/jcreech72/CreechCapstone/blob/main/Chi-Sq2.png")
+
 
 ## Python Notebook
 Review Data & Statistics (loaded cleaned csv file into Python notebook)
 Vizualizations & Finding Outliers
 Remove Outliers & Look at Distributions Without Outliers
 Visualizations & Correlations
+![alt text]("https://github.com/jcreech72/CreechCapstone/blob/main/PythonLR1.png")
